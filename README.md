@@ -17,13 +17,13 @@ This project is a web application built with [Next.js](https://nextjs.org/) that
 
 ###  Running the Development Server
 
-### npm run dev
+#### npm run dev
  or
-### yarn dev
+#### yarn dev
  or
-### pnpm dev
+#### pnpm dev
  or
-### bun dev
+#### bun dev
 
 
 
@@ -31,11 +31,11 @@ This project is a web application built with [Next.js](https://nextjs.org/) that
 
 npm run jest
  or
-### yarn test
+#### yarn test
  or
-### pnpm test
+#### pnpm test
  or
-### bun test
+#### bun test
 
 
 
