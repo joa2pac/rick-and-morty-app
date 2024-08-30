@@ -19,7 +19,7 @@ This project is a web application built with [Next.js](https://nextjs.org/) that
 
 ### npm run dev
  or
-###yarn dev
+### yarn dev
  or
 ### pnpm dev
  or
