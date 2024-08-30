@@ -61,6 +61,8 @@ const CharacterSelection: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-2">
         {/* Character List 1 */}
         <div className=" flex flex-col min-h-screen">
+       <div className='flex flex-row justify-between items-center'>
+       <h2 className='text-xl font-bold mb-1'>Character #1</h2>
   <input
     type="text"
     value={searchQuery1}
@@ -68,6 +70,7 @@ const CharacterSelection: React.FC = () => {
     placeholder="Search Characters"
      className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400 w-1/3"
   />
+       </div>
   {loading1 ? (
     <div className="flex justify-center items-center h-24">
       <ClipLoader color="#36d7b7" size={50} />
@@ -106,6 +109,8 @@ const CharacterSelection: React.FC = () => {
 
         {/* Character List 2 */}
         <div className="flex flex-col min-h-screen">
+          <div  className='flex flex-row justify-between items-center'>
+          <h2 className='text-xl font-bold mb-1'>Character #2</h2>
   <input
     type="text"
     value={searchQuery2}
@@ -113,6 +118,7 @@ const CharacterSelection: React.FC = () => {
     placeholder="Search Characters"
     className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400 w-1/3"
   />
+          </div>
   {loading2 ? (
     <div className="flex justify-center items-center h-24">
       <ClipLoader color="#36d7b7" size={50} />
