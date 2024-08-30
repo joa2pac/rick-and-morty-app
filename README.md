@@ -29,7 +29,7 @@ This project is a web application built with [Next.js](https://nextjs.org/) that
 
 ### 🧪 Testing
 
-npm run jest
+### npx  jest
  or
 #### yarn test
  or
