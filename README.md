@@ -1,10 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick and Morty App
 
-## Getting Started
+This project is a web application built with [Next.js](https://nextjs.org/) that consumes the Rick and Morty API [https://rickandmortyapi.com/](https://rickandmortyapi.com/). The goal is to list characters from the series and display episodes in which they appear, meeting the following requirements:
 
-First, run the development server:
 
-```bash
+##  🚀 Getting Started
+
+###  Installation
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+
+
+###  Running the Development Server
+
 npm run dev
 # or
 yarn dev
@@ -12,26 +24,37 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🧪 Testing
 
-## Learn More
+npm run jest
+# or
+yarn test
+# or
+pnpm test
+# or
+bun test
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📦 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy this Next.js application is to use the [Vercel Platform](https://vercel.com/) created by the authors of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# rick-and-morty-app
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 🔗 Additional Resources
+
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Next.js Interactive Tutorial](https://nextjs.org/learn) - A hands-on tutorial to learn Next.js.
+
+
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/your-username/rick-and-morty-app.git
+cd rick-and-morty-app
