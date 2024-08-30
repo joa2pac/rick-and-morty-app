@@ -58,94 +58,96 @@ const CharacterSelection: React.FC = () => {
 
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-2">
         {/* Character List 1 */}
-        <div>
-          <input
-            type="text"
-            value={searchQuery1}
-            onChange={(e) => setSearchQuery1(e.target.value)}
-            placeholder="Search Characters"
-            className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400"
-          />
-          {loading1 ? (
-            <div className="flex justify-center items-center h-24">
-              <ClipLoader color="#36d7b7" size={50} />
-            </div>
-          ) : (
-            <>
-              {error1 ? (
-                <div className="text-red-500 mb-4">{error1}</div>
-              ) : (
-                <CharacterList
-                  characters={charactersData1.results}
-                  onCharacterSelect={handleCharacterSelect1}
-                  selectedCharacterId={selectedCharacter1}
-                />
-              )}
-            </>
-          )}
-          <div className="flex justify-between mt-4">
-            <button
-              onClick={() => setCurrentPage1(currentPage1 > 1 ? currentPage1 - 1 : 1)}
-              disabled={currentPage1 === 1}
-              className="p-2 bg-gray-700 text-white rounded"
-            >
-              Previous
-            </button>
-            <button
-              onClick={() => setCurrentPage1(currentPage1 + 1)}
-              disabled={!charactersData1.info.next}
-              className="p-2 bg-gray-700 text-white rounded"
-            >
-              Next
-            </button>
-          </div>
-        </div>
+        <div className=" flex flex-col min-h-screen">
+  <input
+    type="text"
+    value={searchQuery1}
+    onChange={(e) => setSearchQuery1(e.target.value)}
+    placeholder="Search Characters"
+     className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400 w-1/3"
+  />
+  {loading1 ? (
+    <div className="flex justify-center items-center h-24">
+      <ClipLoader color="#36d7b7" size={50} />
+    </div>
+  ) : (
+    <>
+      {error1 ? (
+        <div className="text-red-500 mb-4">{error1}</div>
+      ) : (
+        <CharacterList
+          characters={charactersData1.results}
+          onCharacterSelect={handleCharacterSelect1}
+          selectedCharacterId={selectedCharacter1}
+        />
+      )}
+    </>
+  )}
+  <div className="mt-auto flex justify-between">
+    <button
+      onClick={() => setCurrentPage1(currentPage1 > 1 ? currentPage1 - 1 : 1)}
+      disabled={currentPage1 === 1}
+      className="p-2 bg-gray-700 text-white rounded"
+    >
+      Previous
+    </button>
+    <button
+      onClick={() => setCurrentPage1(currentPage1 + 1)}
+      disabled={!charactersData1.info.next}
+      className="p-2 bg-gray-700 text-white rounded"
+    >
+      Next
+    </button>
+  </div>
+</div>
+
 
         {/* Character List 2 */}
-        <div>
-          <input
-            type="text"
-            value={searchQuery2}
-            onChange={(e) => setSearchQuery2(e.target.value)}
-            placeholder="Search Characters"
-            className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400"
-          />
-          {loading2 ? (
-            <div className="flex justify-center items-center h-24">
-              <ClipLoader color="#36d7b7" size={50} />
-            </div>
-          ) : (
-            <>
-              {error2 ? (
-                <div className="text-red-500 mb-4">{error2}</div>
-              ) : (
-                <CharacterList
-                  characters={charactersData2.results}
-                  onCharacterSelect={handleCharacterSelect2}
-                  selectedCharacterId={selectedCharacter2}
-                />
-              )}
-            </>
-          )}
-          <div className="flex justify-between mt-4">
-            <button
-              onClick={() => setCurrentPage2(currentPage2 > 1 ? currentPage2 - 1 : 1)}
-              disabled={currentPage2 === 1}
-              className="p-2 bg-gray-700 text-white rounded"
-            >
-              Previous
-            </button>
-            <button
-              onClick={() => setCurrentPage2(currentPage2 + 1)}
-              disabled={!charactersData2.info.next}
-              className="p-2 bg-gray-700 text-white rounded"
-            >
-              Next
-            </button>
-          </div>
-        </div>
+        <div className="flex flex-col min-h-screen">
+  <input
+    type="text"
+    value={searchQuery2}
+    onChange={(e) => setSearchQuery2(e.target.value)}
+    placeholder="Search Characters"
+    className="mb-4 p-2 rounded bg-gray-700 text-white placeholder-gray-400 w-1/3"
+  />
+  {loading2 ? (
+    <div className="flex justify-center items-center h-24">
+      <ClipLoader color="#36d7b7" size={50} />
+    </div>
+  ) : (
+    <>
+      {error2 ? (
+        <div className="text-red-500 mb-4">{error2}</div>
+      ) : (
+        <CharacterList
+          characters={charactersData2.results}
+          onCharacterSelect={handleCharacterSelect2}
+          selectedCharacterId={selectedCharacter2}
+        />
+      )}
+    </>
+  )}
+  <div className="mt-auto flex justify-between">
+    <button
+      onClick={() => setCurrentPage2(currentPage2 > 1 ? currentPage2 - 1 : 1)}
+      disabled={currentPage2 === 1}
+      className="p-2 bg-gray-700 text-white rounded"
+    >
+      Previous
+    </button>
+    <button
+      onClick={() => setCurrentPage2(currentPage2 + 1)}
+      disabled={!charactersData2.info.next}
+      className="p-2 bg-gray-700 text-white rounded"
+    >
+      Next
+    </button>
+  </div>
+</div>
+
       </div>
 
       {selectedCharacter1 && selectedCharacter2 && (

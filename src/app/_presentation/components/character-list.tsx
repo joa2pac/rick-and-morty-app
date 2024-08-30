@@ -14,7 +14,7 @@ const CharacterList: React.FC<CharacterListProps> = ({ characters, onCharacterSe
         <div
           key={character.id}
           onClick={() => onCharacterSelect(character.id)}
-          className={`p-2 rounded-lg ${selectedCharacterId === character.id ? 'border-4 border-green-500' : 'border-2 border-transparent'}`} // Conditional border
+          className={` rounded-lg ${selectedCharacterId === character.id ? 'border-2 border-green-500' : 'border-2 border-transparent'}`} // Conditional border
         >
           <CharacterCard {...character} />
         </div>
