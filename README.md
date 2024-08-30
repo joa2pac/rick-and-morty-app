@@ -7,35 +7,35 @@ This project is a web application built with [Next.js](https://nextjs.org/) that
 
 ###  Installation
 
-npm install
-# or
-yarn install
-# or
-pnpm install
+### npm install
+ or
+ ### yarn install
+ or
+### pnpm install
 
 
 
 ###  Running the Development Server
 
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### npm run dev
+ or
+###yarn dev
+ or
+### pnpm dev
+ or
+### bun dev
 
 
 
 ### 🧪 Testing
 
 npm run jest
-# or
-yarn test
-# or
-pnpm test
-# or
-bun test
+ or
+### yarn test
+ or
+### pnpm test
+ or
+### bun test
 
 
 
