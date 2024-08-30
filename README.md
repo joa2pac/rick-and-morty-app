@@ -1,6 +1,6 @@
 # Rick and Morty App
 
-This project is a web application built with [Next.js](https://nextjs.org/) that consumes the Rick and Morty API [https://rickandmortyapi.com/](https://rickandmortyapi.com/). The goal is to list characters from the series and display episodes in which they appear, meeting the following requirements:
+This project is a web application built with [Next.js](https://nextjs.org/) that consumes the Rick and Morty API [https://rickandmortyapi.com/](https://rickandmortyapi.com/). This app lists characters from the series and shows the episodes they appear in:
 
 
 ##  🚀 Getting Started
